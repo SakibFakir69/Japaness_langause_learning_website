@@ -1,0 +1,112 @@
+[
+  {
+    "Id": "1",
+    "word": "abandonar",
+    "pronunciation": "ah-bah-DOH-nahr",
+    "meaning": "to abandon",
+    "part_of_speech": "verb",
+    "difficulty": "medium",
+    "Lesson_no": 1,
+    "when_to_say": "When describing leaving something behind",
+    "example": "El hombre decidió abandonar el proyecto. (The man decided to abandon the project.)"
+  },
+  {
+    "Id": "2",
+    "word": "amigo",
+    "pronunciation": "ah-MEE-goh",
+    "meaning": "friend",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "Lesson_no": 1,
+    "when_to_say": "When referring to a friend",
+    "example": "Juan es mi mejor amigo. (Juan is my best friend.)"
+  },
+  {
+    "Id": "3",
+    "word": "feliz",
+    "pronunciation": "feh-LEEZ",
+    "meaning": "happy",
+    "part_of_speech": "adjective",
+    "difficulty": "easy",
+    "Lesson_no": 2,
+    "when_to_say": "When describing a positive emotion",
+    "example": "Estoy muy feliz hoy. (I am very happy today.)"
+  },
+  {
+    "Id": "4",
+    "word": "trabajo",
+    "pronunciation": "trah-BAH-hoh",
+    "meaning": "work",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "Lesson_no": 3,
+    "when_to_say": "When talking about a job or task",
+    "example": "Tengo mucho trabajo que hacer. (I have a lot of work to do.)"
+  },
+  {
+    "Id": "5",
+    "word": "correr",
+    "pronunciation": "koh-REHR",
+    "meaning": "to run",
+    "part_of_speech": "verb",
+    "difficulty": "easy",
+    "Lesson_no": 1,
+    "when_to_say": "When talking about physical activity",
+    "example": "Me gusta correr por la mañana. (I like to run in the morning.)"
+  },
+  {
+    "Id": "6",
+    "word": "grande",
+    "pronunciation": "GRAHN-deh",
+    "meaning": "big, large",
+    "part_of_speech": "adjective",
+    "difficulty": "easy",
+    "Lesson_no": 2,
+    "when_to_say": "When describing size",
+    "example": "La casa es muy grande. (The house is very big.)"
+  },
+  {
+    "Id": "7",
+    "word": "pequeño",
+    "pronunciation": "peh-KEH-nyoh",
+    "meaning": "small, little",
+    "part_of_speech": "adjective",
+    "difficulty": "medium",
+    "Lesson_no": 2,
+    "when_to_say": "When describing something of small size",
+    "example": "Mi perro es pequeño. (My dog is small.)"
+  },
+  {
+    "Id": "8",
+    "word": "comer",
+    "pronunciation": "koh-MEHR",
+    "meaning": "to eat",
+    "part_of_speech": "verb",
+    "difficulty": "easy",
+    "Lesson_no": 1,
+    "when_to_say": "When talking about eating",
+    "example": "Voy a comer pizza. (I am going to eat pizza.)"
+  },
+  {
+    "Id": "9",
+    "word": "hablar",
+    "pronunciation": "ah-BLAHR",
+    "meaning": "to speak, to talk",
+    "part_of_speech": "verb",
+    "difficulty": "easy",
+    "Lesson_no": 1,
+    "when_to_say": "When referring to speaking",
+    "example": "Me gusta hablar con mis amigos. (I like to talk with my friends.)"
+  },
+  {
+    "Id": "10",
+    "word": "día",
+    "pronunciation": "DEE-ah",
+    "meaning": "day",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "Lesson_no": 1,
+    "when_to_say": "When talking about time or the day",
+    "example": "Hoy es un buen día. (Today is a good day.)"
+  }
+]
