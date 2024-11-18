@@ -3,7 +3,8 @@
 import React, { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
 import { MyContext } from '../Context/ContextApi'
-
+import { signOut } from 'firebase/auth';
+import auth from '../Firebaseconfig/config';
 function Navbar() {
 
 
@@ -12,6 +13,18 @@ function Navbar() {
 
 
   console.log("nav ",{user})
+
+  const handelSignOut = async ()=>{
+    try {
+      const result = await signOut(auth);
+      alert("Sign out succesfully");
+    } catch (error) {
+      alert("we found a error in sign out");
+    }
+
+    console.log( 'navbar'
+    )
+  }
 
 
 
@@ -31,12 +44,27 @@ function Navbar() {
                 <NavLink to='/startLearning'>start-learning</NavLink>
                 <NavLink to='/tutorials'>Tutorials</NavLink>
 
-                <li>about-us</li>
-                <li> my-profile</li>
+                <NavLink to='aboutus'>about-us</NavLink>
+                <NavLink to='myprofile'> my-profile</NavLink>
             
             </div>
             <div className='p-2'>
-                <button className='px-9 py-2 border-2 rounded-md bg-orange-300 text-xl p-2'>Log in</button>
+              {
+                user ? (<div>
+
+                  <button onClick={handelSignOut}>Log out</button>
+
+                </div>)
+                :
+                (<div>
+                  
+                  <NavLink to='auth/login'>Log in</NavLink>
+
+                </div>)
+              }
+
+                
+
             </div>
         </section>
         

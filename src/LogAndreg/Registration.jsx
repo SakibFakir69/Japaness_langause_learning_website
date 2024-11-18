@@ -1,90 +1,149 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Navigate, NavLink, useNavigate } from "react-router-dom";
 import { MyContext } from "../Context/ContextApi";
 import { Container } from "postcss";
-import { GoogleAuthProvider } from "firebase/auth";
+import { GoogleAuthProvider, updateProfile } from "firebase/auth";
 import { signInWithPopup } from "firebase/auth";
 
 import auth from "../Firebaseconfig/config";
+import { toast, ToastContainer  } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+
 function Registration() {
+  const { handelReg, handelGoogleReg, setuser , seterror,error } = useContext(MyContext);
 
-    const {handelReg,handelGoogleReg,setuser} = useContext(MyContext);
-
-    const Provider = new GoogleAuthProvider();
-
-    const navtoHome = useNavigate();
+  const Provider = new GoogleAuthProvider();
 
 
-    const hadnelGoogle = ()=>{
-        handelGoogleReg()
-        .then((result)=>{
-            navtoHome('/');
-            const users = result.user;
-            setuser(users)
-        })
-        .catch((error)=>{
-            console.log("google reg faild to form")
-        })
-        
+  const passValadition = (password)=>{
 
-       
+    const uppercase = /[A-Z]/.test(password);
+    const lowercase = /[a-z]/.test(password);
+
+    const passlen = password.length>=6;
+ 
+
+    if (!uppercase) {
+      return "Password must have at least one uppercase letter.";
+    }
+    if (!lowercase) {
+      return "Password must have at least one lowercase letter.";
+    }
+    if(!passlen)
+    {
+      return 'Enter your 6 digits Character';
+    }
+   
+  
+    // return "";
+
+  
+
+
+  }
+
+
+  const [ passwordvisible , setpaswordvisible ] = useState(false);
+
+  const showpass = ()=>{
+    setpaswordvisible(prev =>!prev);
+    console.log("pasword")
+  }
+
+
+ 
+
+  
+
+
+
+  const navtoHome = useNavigate();
+
+  const hadnelGoogle = () => {
+    handelGoogleReg()
+      .then((result) => {
+
+        navtoHome("/");
+        const users = result.user;
+        setuser(users);
+        toast.success("Succesfully gogle Regsitation")
+
+
+      })
+      .catch((error) => {
+        console.log("google reg faild to form");
+        toast.error("Succesfully gogle Regsitation")
+      });
+  };
+
+  const handelRegistration = (event) => {
+
+    event.preventDefault();
+
+    const name = event.target.name.value;
+    const email = event.target.email.value;
+
+    const PhotoUrl = event.target.Photo_URL.value;
+    const password = event.target.password.value;
+
+    const passworderror = passValadition(password);
+
+    if(passworderror)
+    {
+      seterror(passworderror);
+      return ;
     }
 
 
+    
+    
+
+    
+
+
+  
 
 
 
-
-    const handelRegistration = (event)=>{
-        event.preventDefault();
-
-
-        const name =event.target.name.value;
-        const email = event.target.email.value;
+    handelReg(email, password)
+      .then((result) => {
+        const users = result.user;
+        toast.success("Succesfully  Regsitation")
+        if (users) {
+          updateProfile(users, { displayName: name, photoURL: PhotoUrl })
+            .then(() => {
+              console.log("profile updatedd from reg");
+              alert("profile updated");
+              setuser(users);
+              navtoHome("/");
               
-        const PhotoUrl = event.target.Photo_URL.value;
-        const password = event.target.password.value;
+       
 
-        handelReg(email, password)
-        .then((result)=>{
-            const users = result.user;
-            console.log(users);
-            
-            setuser(users)
+            })
+            .catch((error) => {
+              console.log("we fround error on reg");
+              toast.error("Succesfully Profileupdated failed")
+            });
+        }
+      })
+      .catch((error) => {
+        console.log(error.message, "from regsataiong");
+        toast.error("Regisataion failed")
+      });
 
-            if(users)
-            {
-                navtoHome('/')
-
-            }
-
-            
-
-
-        })
-        .catch((error)=>{
-            console.log(err.message , "from regsataiong")
-        })
-
-
-
-
-
-        console.log("from rgsatataion")
-
-
-
-    }
-
-
+    console.log("from rgsatataion");
+  };
 
   return (
     // ( Name, Email, Photo-URL, Password & Register Button )
     <div className="flex  justify-center ">
+      <ToastContainer/>
+    
       <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10 border border-black p-4">
         <h2 className="text-2xl font-semibold text-center ">
           Registration Now
         </h2>
+        
 
         <form class="card-body  rounded " onSubmit={handelRegistration}>
           <div class="form-control">
@@ -93,7 +152,6 @@ function Registration() {
             </label>
 
             <input
-            
               type=""
               name="name"
               className="px-6 py-2 border"
@@ -127,13 +185,27 @@ function Registration() {
             <label class="label">
               <span class="label-text">Password</span>
             </label>
+
+            <div className="border flex justify-between py-2  ">
+
             <input
-              type="password"
+              type={passwordvisible ? "text" : "password"}
               placeholder="password"
               name="password"
-              class="input input-bordered"
+             
               required
+             
+
             />
+            <i class="ri-eye-line" onClick={showpass}></i>
+
+            </div>
+
+
+
+
+            <p className="text-red-500 text-xl">{error && error}</p>
+
             <label class="label">
               <a href="#" class="label-text-alt link link-hover">
                 Forgot password?
@@ -141,35 +213,33 @@ function Registration() {
             </label>
           </div>
           <div class="form-control mt-6">
-            <button class="btn btn-primary">Login</button>
+            <button class="btn btn-primary">Register</button>
           </div>
-
-
-        
-
         </form>
         <div className="flex justify-center flex-col">
-            <p className="text-xl text-center">or</p>
-            <button className="px-4 py-2 bg-black rounded-md text-xl text-white" 
-
+          <p className="text-xl text-center">or</p>
+          <button
+            className="px-4 py-2 bg-black rounded-md text-xl text-white"
             onClick={hadnelGoogle}
-            
-            >Registration With Google</button>
-          </div>
-          
-          <div className="flex text-center text-xl mt-4">
-            <p className="text-center ml-4">You have already account <NavLink to='/auth/login' className={`text-green-600  text-center mt-2 `}>Login</NavLink></p>
-          </div>
+          >
+            Registration With Google
+          </button>
+        </div>
 
-        
-     
-      
+        <div className="flex text-center text-xl mt-4">
+          <p className="text-center ml-4">
+            You have already account{" "}
+            <NavLink
+              to="/auth/login"
+              className={`text-green-600  text-center mt-2 `}
+            >
+              Login
+            </NavLink>
+          </p>
+        </div>
+
         {/* <Container/> */}
-        
       </div>
-      
-
-
     </div>
   );
 }

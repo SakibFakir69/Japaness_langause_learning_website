@@ -1,14 +1,31 @@
 
 
 
-import React from 'react'
+import React, { useContext } from 'react'
+import { MyContext } from '../Context/ContextApi'
+import { Navigate } from 'react-router-dom';
 
-function PrivateRouter() {
+function PrivateRouter({children}) {
+
+  const {user} = useContext(MyContext)
+
+
+  /// private jai user theka jodi true hoye toi acces korta parab oi child
+  // n a hola paraba na
+
+  if(user)
+  {
+    return children;
+  }
+  
+  // jodi user true hoye tokon children a jaba 
+  // na pass korea auth/login jaba
+
   return (
-    <div>PrivateRouter
+   
+      <Navigate to='/auth/login'></Navigate>
 
-        
-    </div>
+
   )
 }
 

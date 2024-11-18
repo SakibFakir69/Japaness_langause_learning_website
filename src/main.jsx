@@ -12,6 +12,10 @@ import Toutorails from './Pages/Toutorails.jsx'
 import AuthLayout from './LogAndreg/AuthLayout.jsx'
 import Login from './LogAndreg/Login.jsx'
 import Registration from './LogAndreg/Registration.jsx'
+import Myprofile from './Component/Myprofile.jsx'
+import Aboutus from './Component/Aboutus.jsx'
+import PrivateRouter from './PrivateRoute/PrivateRouter.jsx'
+import Lessonpage from './Pages/Lessonpage.jsx'
 
 
 
@@ -52,6 +56,23 @@ const route =createBrowserRouter([
       }
     ]
     
+  },
+  {
+    path : 'myprofile',
+    element : <PrivateRouter> <Myprofile/> </PrivateRouter>
+    // jodi user log in kora token e dakaba 
+    // karon ami private vitor akta chid pass korcei
+    /// oi chid hocca avoutus 
+    // jodi user theka tokon daka ba 
+    // na takla rederict korba login page 
+  },
+  {
+    path : 'aboutus',
+    element : <PrivateRouter> <Aboutus/> </PrivateRouter>
+  },
+  {
+    path : '/lessonpage',
+    element : <Lessonpage/>
   },
   {
     path : '*',

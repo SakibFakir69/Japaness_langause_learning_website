@@ -6,6 +6,7 @@ import Banner from '../Homepages/Banner'
 import About from '../Homepages/About'
 import Success from '../Homepages/Success'
 import Unique from '../Homepages/Unique'
+import Other from '../Homepages/Other'
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <About/>
       <Success/>
       <Unique/>
+      <Other/>
 
 
 

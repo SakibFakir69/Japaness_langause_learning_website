@@ -1,7 +1,8 @@
 import React from "react";
 
-import { Link, useNavigate } from "react-router-dom";
-
+import { Link, NavLink, useNavigate } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 function StartLearning() {
   let card = 10;
 
@@ -9,6 +10,7 @@ function StartLearning() {
 
   return (
     <div className="mt-10">
+      <ToastContainer/>
       <div className="text-center">
         <h1 className="text-2xl font-semibold">Start you Journy Now</h1>
         <p>Expand your vocabulary and master new skills!</p>
@@ -17,16 +19,19 @@ function StartLearning() {
 
       {/* statice 10 card */}
 
-      <div className="grid sm:grid-cols-5 gap-4 justify-around px-4 mt-10">
+      <div className="grid md:grid-cols-3 gap-4 sm:grid-cols-2 justify-around px-4 mt-10">
         <div className="border p-4 text-xl font-semibold cursor-pointer rounded-md bg-black text-white">
           Lesson - 1
         </div>
         <div className="border p-4 text-xl font-semibold cursor-pointer rounded-md bg-black text-white">
           Lesson - 2
         </div>
+
         <div className="border p-4 text-xl font-semibold cursor-pointer rounded-md bg-black text-white">
-          Lesson - 3
+        
+          <NavLink to='/lessonpage'>Lesson - 3</NavLink>
         </div>
+
         <div className="border p-4 text-xl font-semibold cursor-pointer rounded-md bg-black text-white">
           Lesson - 4
         </div>
@@ -46,9 +51,18 @@ function StartLearning() {
         <div className="border p-4 text-xl font-semibold cursor-pointer rounded-md bg-black text-white">
           Lesson - 9
         </div>
+
         <div className="border p-4 text-xl font-semibold cursor-pointer rounded-md bg-black text-white">
           Lesson - 10
         </div>
+
+        <div className="border p-4 text-xl font-semibold cursor-pointer rounded-md bg-black text-white" onClick={()=>toast.error("This lesson coming soon")}>
+          Lesson - 11
+        </div>
+        <div className="border p-4 text-xl font-semibold cursor-pointer rounded-md bg-black text-white" onClick={()=> toast.error("this lesson coming soon")}>
+          Lesson - 12
+        </div>
+
         <hr />
       </div>
 
@@ -57,11 +71,11 @@ function StartLearning() {
           {" "}
           Learning the alphabet
         </h1>
-        <div className="flex flex-col space-y-5">
+        <div className="grid md:grid-cols-2 space-y-5 w-full gap-6 h-full">
           <iframe 
-            width="560"
-            height="315"
-            className="rounded-md"
+           
+            className="rounded-md w-full h-[400px] p-10 shadow-md"
+
             src="https://www.youtube.com/embed/hsLYD1Jyf3A?si=FFXOuSXGoWNF7Y8R"
             title="YouTube video player"
             frameborder="0"
@@ -71,9 +85,9 @@ function StartLearning() {
           ></iframe>
 
           <iframe
-            width="560"
-            className="rounded-md"
-            height="315"
+           
+            className="rounded-md w-full h-[400px] p-10 -mt-2 shadow-md"
+          
             src="https://www.youtube.com/embed/SLmEdQ1pcAM?si=gsDSlbHM03kIt7Qe"
             title="YouTube video player"
             frameborder="0"

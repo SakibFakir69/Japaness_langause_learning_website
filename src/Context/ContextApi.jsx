@@ -4,7 +4,7 @@
 
 import React, { createContext, useEffect, useState } from 'react'
 import auth from '../Firebaseconfig/config';
-import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
+import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from 'firebase/auth';
 import { GoogleAuthProvider } from 'firebase/auth';
 
 export const MyContext =  createContext();
@@ -25,20 +25,32 @@ function ContextApi({children}) {
     return createUserWithEmailAndPassword(auth,email,password)
   }
   const Provider = new GoogleAuthProvider();
+
   const handelGoogleReg = ()=>{
+    return signInWithPopup(auth,Provider);
+  }
+  // log in
+
+  const HandelLogin = ()=>{
     return signInWithPopup(auth,Provider);
   }
 
 
 
 
+
     const authInfo ={
       handelReg,seterror,setloading,setuser,
-      handelGoogleReg,user,
+      handelGoogleReg,user, HandelLogin,error
     
 
 
     }
+
+    // 
+    
+
+
 
 
     useEffect(()=>{
