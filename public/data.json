@@ -1,0 +1,560 @@
+[
+  {
+    "id": "word001",
+    "word": "こんにちは",
+    "pronunciation": "konnichiwa",
+    "meaning": "hello",
+    "part_of_speech": "expression",
+    "difficulty": "easy",
+    "lesson_no": 1,
+    "when_to_say": "Used to greet someone during the day.",
+    "example": "こんにちは、元気ですか？ (konnichiwa, genki desu ka?) - Hello, how are you?"
+  },
+  {
+    "id": "word002",
+    "word": "ありがとう",
+    "pronunciation": "arigatou",
+    "meaning": "thank you",
+    "part_of_speech": "expression",
+    "difficulty": "easy",
+    "lesson_no": 1,
+    "when_to_say": "Used to express gratitude in informal settings.",
+    "example": "ありがとう、助かりました！ (arigatou, tasukarimashita!) - Thank you, it helped!"
+  },
+  {
+    "id": "word003",
+    "word": "さようなら",
+    "pronunciation": "sayounara",
+    "meaning": "goodbye",
+    "part_of_speech": "expression",
+    "difficulty": "hard",
+    "lesson_no": 1,
+    "when_to_say": "Used to bid farewell.",
+    "example": "さようなら、また明日。 (sayounara, mata ashita) - Goodbye, see you tomorrow."
+  },
+  {
+    "id": "word004",
+    "word": "はい",
+    "pronunciation": "hai",
+    "meaning": "yes",
+    "part_of_speech": "expression",
+    "difficulty": "easy",
+    "lesson_no": 1,
+    "when_to_say": "Used to agree or confirm.",
+    "example": "はい、それは正しいです。 (hai, sore wa tadashii desu) - Yes, that is correct."
+  },
+  {
+    "id": "word005",
+    "word": "いいえ",
+    "pronunciation": "iie",
+    "meaning": "no",
+    "part_of_speech": "expression",
+    "difficulty": "hard",
+    "lesson_no": 1,
+    "when_to_say": "Used to disagree or decline.",
+    "example": "いいえ、それは違います。 (iie, sore wa chigaimasu) - No, that is incorrect."
+  },
+
+  {
+    "id": "word006",
+    "word": "家",
+    "pronunciation": "ie",
+    "meaning": "house",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 2,
+    "when_to_say": "Used to refer to a building where people live.",
+    "example": "私の家は大きいです。 (watashi no ie wa ookii desu) - My house is big."
+  },
+  {
+    "id": "word007",
+    "word": "本",
+    "pronunciation": "hon",
+    "meaning": "book",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 2,
+    "when_to_say": "Used to refer to a book or volume.",
+    "example": "彼は本を読んでいます。 (kare wa hon o yondeimasu) - He is reading a book."
+  },
+  {
+    "id": "word008",
+    "word": "犬",
+    "pronunciation": "inu",
+    "meaning": "dog",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 2,
+    "when_to_say": "Used to refer to a dog.",
+    "example": "その犬はかわいいです。 (sono inu wa kawaii desu) - That dog is cute."
+  },
+  {
+    "id": "word009",
+    "word": "猫",
+    "pronunciation": "neko",
+    "meaning": "cat",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 2,
+    "when_to_say": "Used to refer to a cat.",
+    "example": "猫は静かです。 (neko wa shizuka desu) - The cat is quiet."
+  },
+  {
+    "id": "word010",
+    "word": "学校",
+    "pronunciation": "gakkou",
+    "meaning": "school",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 2,
+    "when_to_say": "Used to refer to an educational institution.",
+    "example": "私の学校は近いです。 (watashi no gakkou wa chikai desu) - My school is nearby."
+  },
+
+  {
+    "id": "word011",
+    "word": "友達",
+    "pronunciation": "tomodachi",
+    "meaning": "friend",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 3,
+    "when_to_say": "Used to refer to a friend or companion.",
+    "example": "彼は私の友達です。 (kare wa watashi no tomodachi desu) - He is my friend."
+  },
+  {
+    "id": "word012",
+    "word": "仕事",
+    "pronunciation": "shigoto",
+    "meaning": "work",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 3,
+    "when_to_say": "Used to refer to a job or task.",
+    "example": "私は仕事をしています。 (watashi wa shigoto o shiteimasu) - I am working."
+  },
+  {
+    "id": "word013",
+    "word": "家族",
+    "pronunciation": "kazoku",
+    "meaning": "family",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 3,
+    "when_to_say": "Used to refer to family members.",
+    "example": "私の家族は4人です。 (watashi no kazoku wa yonin desu) - My family has four members."
+  },
+  {
+    "id": "word014",
+    "word": "時間",
+    "pronunciation": "jikan",
+    "meaning": "time",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 3,
+    "when_to_say": "Used to refer to time or hours.",
+    "example": "時間がありません。 (jikan ga arimasen) - I don't have time."
+  },
+  {
+    "id": "word015",
+    "word": "先生",
+    "pronunciation": "sensei",
+    "meaning": "teacher",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 3,
+    "when_to_say": "Used to refer to an instructor or teacher.",
+    "example": "彼女は英語の先生です。 (kanojo wa eigo no sensei desu) - She is an English teacher."
+  },
+
+  {
+    "id": "word016",
+    "word": "小さい",
+    "pronunciation": "chiisai",
+    "meaning": "small",
+    "part_of_speech": "adjective",
+    "difficulty": "easy",
+    "lesson_no": 4,
+    "when_to_say": "Used to describe something with a small size.",
+    "example": "この箱はとても小さいです。 (kono hako wa totemo chiisai desu) - This box is very small."
+  },
+  {
+    "id": "word017",
+    "word": "高い",
+    "pronunciation": "takai",
+    "meaning": "expensive",
+    "part_of_speech": "adjective",
+    "difficulty": "medium",
+    "lesson_no": 4,
+    "when_to_say": "Used to describe something with a high price.",
+    "example": "その服はとても高いです。 (sono fuku wa totemo takai desu) - That clothing is very expensive."
+  },
+  {
+    "id": "word018",
+    "word": "安い",
+    "pronunciation": "yasui",
+    "meaning": "cheap",
+    "part_of_speech": "adjective",
+    "difficulty": "easy",
+    "lesson_no": 4,
+    "when_to_say": "Used to describe something inexpensive.",
+    "example": "この店の商品は安いです。 (kono mise no shouhin wa yasui desu) - The items in this shop are cheap."
+  },
+  {
+    "id": "word019",
+    "word": "面白い",
+    "pronunciation": "omoshiroi",
+    "meaning": "interesting",
+    "part_of_speech": "adjective",
+    "difficulty": "hard",
+    "lesson_no": 4,
+    "when_to_say": "Used to describe something engaging or amusing.",
+    "example": "この本はとても面白いです。 (kono hon wa totemo omoshiroi desu) - This book is very interesting."
+  },
+  {
+    "id": "word020",
+    "word": "美しい",
+    "pronunciation": "utsukushii",
+    "meaning": "beautiful",
+    "part_of_speech": "adjective",
+    "difficulty": "medium",
+    "lesson_no": 4,
+    "when_to_say": "Used to describe something aesthetically pleasing.",
+    "example": "この景色は美しいです。 (kono keshiki wa utsukushii desu) - This view is beautiful."
+  },
+
+  {
+    "id": "word021",
+    "word": "買う",
+    "pronunciation": "kau",
+    "meaning": "to buy",
+    "part_of_speech": "verb",
+    "difficulty": "easy",
+    "lesson_no": 5,
+    "when_to_say": "Used when purchasing something.",
+    "example": "本を買います。 (hon o kaimasu) - I will buy a book."
+  },
+  {
+    "id": "word022",
+    "word": "書く",
+    "pronunciation": "kaku",
+    "meaning": "to write",
+    "part_of_speech": "verb",
+    "difficulty": "easy",
+    "lesson_no": 5,
+    "when_to_say": "Used when writing something.",
+    "example": "手紙を書きます。 (tegami o kakimasu) - I will write a letter."
+  },
+  {
+    "id": "word023",
+    "word": "読む",
+    "pronunciation": "yomu",
+    "meaning": "to read",
+    "part_of_speech": "verb",
+    "difficulty": "hard",
+    "lesson_no": 5,
+    "when_to_say": "Used when reading something.",
+    "example": "雑誌を読みます。 (zasshi o yomimasu) - I read a magazine."
+  },
+  {
+    "id": "word024",
+    "word": "乗る",
+    "pronunciation": "noru",
+    "meaning": "to ride",
+    "part_of_speech": "verb",
+    "difficulty": "medium",
+    "lesson_no": 5,
+    "when_to_say": "Used to describe getting on a vehicle or ride.",
+    "example": "電車に乗ります。 (densha ni norimasu) - I get on the train."
+  },
+  {
+    "id": "word025",
+    "word": "立つ",
+    "pronunciation": "tatsu",
+    "meaning": "to stand",
+    "part_of_speech": "verb",
+    "difficulty": "hard",
+    "lesson_no": 5,
+    "when_to_say": "Used to describe the action of standing.",
+    "example": "彼は立っています。 (kare wa tatteimasu) - He is standing."
+  },
+
+  {
+    "id": "word026",
+    "word": "早い",
+    "pronunciation": "hayai",
+    "meaning": "early",
+    "part_of_speech": "adjective",
+    "difficulty": "easy",
+    "lesson_no": 6,
+    "when_to_say": "Used to describe something happening before expected time.",
+    "example": "今日は早く起きました。 (kyou wa hayaku okimashita) - I woke up early today."
+  },
+  {
+    "id": "word027",
+    "word": "遅い",
+    "pronunciation": "osoi",
+    "meaning": "late",
+    "part_of_speech": "adjective",
+    "difficulty": "medium",
+    "lesson_no": 6,
+    "when_to_say": "Used to describe something occurring later than expected.",
+    "example": "彼は遅く帰りました。 (kare wa osoku kaerimashita) - He came home late."
+  },
+  {
+    "id": "word028",
+    "word": "新しい",
+    "pronunciation": "atarashii",
+    "meaning": "new",
+    "part_of_speech": "adjective",
+    "difficulty": "easy",
+    "lesson_no": 6,
+    "when_to_say": "Used to describe something recently made or introduced.",
+    "example": "新しい靴を買いました。 (atarashii kutsu o kaimashita) - I bought new shoes."
+  },
+  {
+    "id": "word029",
+    "word": "古い",
+    "pronunciation": "furui",
+    "meaning": "old",
+    "part_of_speech": "adjective",
+    "difficulty": "hard",
+    "lesson_no": 6,
+    "when_to_say": "Used to describe something old or outdated.",
+    "example": "この本は古いです。 (kono hon wa furui desu) - This book is old."
+  },
+  {
+    "id": "word030",
+    "word": "静か",
+    "pronunciation": "shizuka",
+    "meaning": "quiet",
+    "part_of_speech": "adjective",
+    "difficulty": "easy",
+    "lesson_no": 6,
+    "when_to_say": "Used to describe a quiet place or environment.",
+    "example": "その部屋は静かです。 (sono heya wa shizuka desu) - The room is quiet."
+  },
+  {
+    "id": "word031",
+    "word": "走る",
+    "pronunciation": "hashiru",
+    "meaning": "to run",
+    "part_of_speech": "verb",
+    "difficulty": "medium",
+    "lesson_no": 7,
+    "when_to_say": "Used when describing running or moving quickly.",
+    "example": "彼は毎朝走ります。 (kare wa mai asa hashirimasu) - He runs every morning."
+  },
+  {
+    "id": "word032",
+    "word": "泳ぐ",
+    "pronunciation": "oyogu",
+    "meaning": "to swim",
+    "part_of_speech": "verb",
+    "difficulty": "medium",
+    "lesson_no": 7,
+    "when_to_say": "Used when describing swimming or moving in water.",
+    "example": "彼女はプールで泳ぎます。 (kanojo wa puuru de oyogimasu) - She swims in the pool."
+  },
+  {
+    "id": "word033",
+    "word": "勉強",
+    "pronunciation": "benkyou",
+    "meaning": "study",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 7,
+    "when_to_say": "Used when referring to studying or academic work.",
+    "example": "私は日本語を勉強しています。 (watashi wa nihongo o benkyou shiteimasu) - I am studying Japanese."
+  },
+  {
+    "id": "word034",
+    "word": "食べる",
+    "pronunciation": "taberu",
+    "meaning": "to eat",
+    "part_of_speech": "verb",
+    "difficulty": "easy",
+    "lesson_no": 7,
+    "when_to_say": "Used when describing the act of eating.",
+    "example": "彼はりんごを食べます。 (kare wa ringo o tabemasu) - He eats an apple."
+  },
+  {
+    "id": "word035",
+    "word": "飲む",
+    "pronunciation": "nomu",
+    "meaning": "to drink",
+    "part_of_speech": "verb",
+    "difficulty": "easy",
+    "lesson_no": 7,
+    "when_to_say": "Used when describing the act of drinking.",
+    "example": "彼女は水を飲みます。 (kanojo wa mizu o nomimasu) - She drinks water."
+  },
+
+  {
+    "id": "word036",
+    "word": "暑い",
+    "pronunciation": "atsui",
+    "meaning": "hot",
+    "part_of_speech": "adjective",
+    "difficulty": "hard",
+    "lesson_no": 8,
+    "when_to_say": "Used to describe hot weather or temperature.",
+    "example": "今日はとても暑いです。 (kyou wa totemo atsui desu) - Today is very hot."
+  },
+  {
+    "id": "word037",
+    "word": "寒い",
+    "pronunciation": "samui",
+    "meaning": "cold",
+    "part_of_speech": "adjective",
+    "difficulty": "easy",
+    "lesson_no": 8,
+    "when_to_say": "Used to describe cold weather or temperature.",
+    "example": "冬は寒いです。 (fuyu wa samui desu) - Winter is cold."
+  },
+  {
+    "id": "word038",
+    "word": "強い",
+    "pronunciation": "tsuyoi",
+    "meaning": "strong",
+    "part_of_speech": "adjective",
+    "difficulty": "hard",
+    "lesson_no": 8,
+    "when_to_say": "Used to describe physical or mental strength.",
+    "example": "彼は強い男です。 (kare wa tsuyoi otoko desu) - He is a strong man."
+  },
+  {
+    "id": "word039",
+    "word": "弱い",
+    "pronunciation": "yowai",
+    "meaning": "weak",
+    "part_of_speech": "adjective",
+    "difficulty": "medium",
+    "lesson_no": 8,
+    "when_to_say": "Used to describe physical or mental weakness.",
+    "example": "彼女は少し弱いです。 (kanojo wa sukoshi yowai desu) - She is a bit weak."
+  },
+  {
+    "id": "word040",
+    "word": "高い",
+    "pronunciation": "takai",
+    "meaning": "tall",
+    "part_of_speech": "adjective",
+    "difficulty": "easy",
+    "lesson_no": 8,
+    "when_to_say": "Used to describe height.",
+    "example": "この木はとても高いです。 (kono ki wa totemo takai desu) - This tree is very tall."
+  },
+
+  {
+    "id": "word041",
+    "word": "好き",
+    "pronunciation": "suki",
+    "meaning": "like",
+    "part_of_speech": "adjective",
+    "difficulty": "hard",
+    "lesson_no": 9,
+    "when_to_say": "Used to express liking or preference.",
+    "example": "私は犬が好きです。 (watashi wa inu ga suki desu) - I like dogs."
+  },
+  {
+    "id": "word042",
+    "word": "嫌い",
+    "pronunciation": "kirai",
+    "meaning": "dislike",
+    "part_of_speech": "adjective",
+    "difficulty": "easy",
+    "lesson_no": 9,
+    "when_to_say": "Used to express dislike or aversion.",
+    "example": "私は猫が嫌いです。 (watashi wa neko ga kirai desu) - I dislike cats."
+  },
+  {
+    "id": "word043",
+    "word": "楽しい",
+    "pronunciation": "tanoshii",
+    "meaning": "fun",
+    "part_of_speech": "adjective",
+    "difficulty": "medium",
+    "lesson_no": 9,
+    "when_to_say": "Used to describe something enjoyable.",
+    "example": "その映画は楽しかったです。 (sono eiga wa tanoshikatta desu) - That movie was fun."
+  },
+  {
+    "id": "word044",
+    "word": "悲しい",
+    "pronunciation": "kanashii",
+    "meaning": "sad",
+    "part_of_speech": "adjective",
+    "difficulty": "hard",
+    "lesson_no": 9,
+    "when_to_say": "Used to describe sadness or sorrow.",
+    "example": "彼女は悲しそうです。 (kanojo wa kanashisou desu) - She looks sad."
+  },
+  {
+    "id": "word045",
+    "word": "元気",
+    "pronunciation": "genki",
+    "meaning": "energetic",
+    "part_of_speech": "adjective",
+    "difficulty": "easy",
+    "lesson_no": 9,
+    "when_to_say": "Used to describe energy or enthusiasm.",
+    "example": "彼はいつも元気です。 (kare wa itsumo genki desu) - He is always energetic."
+  },
+
+  {
+    "id": "word046",
+    "word": "質問",
+    "pronunciation": "shitsumon",
+    "meaning": "question",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 10,
+    "when_to_say": "Used to refer to an inquiry or question.",
+    "example": "質問があります。 (shitsumon ga arimasu) - I have a question."
+  },
+  {
+    "id": "word047",
+    "word": "答え",
+    "pronunciation": "kotae",
+    "meaning": "answer",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 10,
+    "when_to_say": "Used to refer to an answer or response.",
+    "example": "正しい答えを探してください。 (tadashii kotae o sagashite kudasai) - Please find the correct answer."
+  },
+  {
+    "id": "word048",
+    "word": "忘れる",
+    "pronunciation": "wasureru",
+    "meaning": "to forget",
+    "part_of_speech": "verb",
+    "difficulty": "hard",
+    "lesson_no": 10,
+    "when_to_say": "Used when describing forgetting something.",
+    "example": "宿題を忘れました。 (shukudai o wasuremashita) - I forgot my homework."
+  },
+  {
+    "id": "word049",
+    "word": "覚える",
+    "pronunciation": "oboeru",
+    "meaning": "to remember",
+    "part_of_speech": "verb",
+    "difficulty": "medium",
+    "lesson_no": 10,
+    "when_to_say": "Used when describing remembering something.",
+    "example": "その歌を覚えています。 (sono uta o oboeteimasu) - I remember that song."
+  },
+  {
+    "id": "word050",
+    "word": "知る",
+    "pronunciation": "shiru",
+    "meaning": "to know",
+    "part_of_speech": "verb",
+    "difficulty": "hard",
+    "lesson_no": 10,
+    "when_to_say": "Used to express knowing information.",
+    "example": "彼の名前を知っていますか？ (kare no namae o shitteimasu ka?) - Do you know his name?"
+  }
+]

@@ -16,6 +16,7 @@ import Myprofile from './Component/Myprofile.jsx'
 import Aboutus from './Component/Aboutus.jsx'
 import PrivateRouter from './PrivateRoute/PrivateRouter.jsx'
 import Lessonpage from './Pages/Lessonpage.jsx'
+import UpdateProfile from './Pages/UpdateProfile.jsx'
 
 
 
@@ -34,7 +35,7 @@ const route =createBrowserRouter([
       },
       {
         path : '/tutorials',
-        element : <Toutorails/>
+        element : <PrivateRouter> <Toutorails/> </PrivateRouter>
       }
     ]
 
@@ -59,7 +60,8 @@ const route =createBrowserRouter([
   },
   {
     path : 'myprofile',
-    element : <PrivateRouter> <Myprofile/> </PrivateRouter>
+    element : <PrivateRouter> <Myprofile/> </PrivateRouter>,
+
     // jodi user log in kora token e dakaba 
     // karon ami private vitor akta chid pass korcei
     /// oi chid hocca avoutus 
@@ -67,12 +69,18 @@ const route =createBrowserRouter([
     // na takla rederict korba login page 
   },
   {
+    path : 'updateprofile',
+    element : <UpdateProfile/>
+  },
+  {
     path : 'aboutus',
     element : <PrivateRouter> <Aboutus/> </PrivateRouter>
   },
   {
-    path : '/lessonpage',
-    element : <Lessonpage/>
+    path : '/lessonpage/:lesson_no',
+    element : <PrivateRouter> <Lessonpage/> </PrivateRouter>,
+    loader : ()=> fetch('data.json')
+
   },
   {
     path : '*',

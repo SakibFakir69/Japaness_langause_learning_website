@@ -5,24 +5,33 @@ import { NavLink } from 'react-router-dom'
 import { MyContext } from '../Context/ContextApi'
 import { signOut } from 'firebase/auth';
 import auth from '../Firebaseconfig/config';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function Navbar() {
 
 
-  const {user} = useContext(MyContext);
+  const {user,setuser,setloading} = useContext(MyContext);
 
 
 
   console.log("nav ",{user})
 
-  const handelSignOut = async ()=>{
-    try {
-      const result = await signOut(auth);
-      alert("Sign out succesfully");
-    } catch (error) {
-      alert("we found a error in sign out");
-    }
+  const handelSignOut =  ()=>{
+    signOut(auth)
+    .then((result)=>{
+      setloading(true);
+      toast.success("Log out succesfully");
+      setuser(null);
+      // here i face problem on setuers
+    
+      
+    })
+    .catch((error)=>{
+      toast.error("we found error " + error.message)
+    })
 
-    console.log( 'navbar'
+    console.log( 'log out from navbar navbar'
     )
   }
 

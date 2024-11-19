@@ -9,11 +9,11 @@ function StartLearning() {
   const gottoTouto = useNavigate();
 
   return (
-    <div className="mt-10">
+    <div className="mt-10 bg-[url(/cool4.png)] rounded-md ">
       <ToastContainer/>
       <div className="text-center">
-        <h1 className="text-2xl font-semibold">Start you Journy Now</h1>
-        <p>Expand your vocabulary and master new skills!</p>
+        <h1 className="text-2xl font-semibold text-white ">Start you Journy Now</h1>
+        <p className="text-gray-300">Expand your vocabulary and master new skills!</p>
       </div>
       <hr className="mt-2"></hr>
 
@@ -21,39 +21,44 @@ function StartLearning() {
 
       <div className="grid md:grid-cols-3 gap-4 sm:grid-cols-2 justify-around px-4 mt-10">
         <div className="border p-4 text-xl font-semibold cursor-pointer rounded-md bg-black text-white">
-          Lesson - 1
+        <NavLink to={`/lessonpage/${1}`}>Lesson - 1</NavLink>
+        {/* gave driect id beacause get params from lesson and view data this lesson */}
+          
+          
+          
         </div>
         <div className="border p-4 text-xl font-semibold cursor-pointer rounded-md bg-black text-white">
-          Lesson - 2
+        <NavLink to={`/lessonpage/${2}`}>Lesson - 2</NavLink>
         </div>
 
         <div className="border p-4 text-xl font-semibold cursor-pointer rounded-md bg-black text-white">
         
-          <NavLink to='/lessonpage'>Lesson - 3</NavLink>
+          <NavLink to={`/lessonpage/${3}`}>Lesson - 3</NavLink>
+
         </div>
 
         <div className="border p-4 text-xl font-semibold cursor-pointer rounded-md bg-black text-white">
-          Lesson - 4
+        <NavLink to={`/lessonpage/${4}`}>Lesson - 4</NavLink>
         </div>
 
         <div className="border p-4 text-xl font-semibold cursor-pointer rounded-md bg-black text-white">
-          Lesson - 5
+        <NavLink to={`/lessonpage/${5}`}>Lesson - 5</NavLink>
         </div>
         <div className="border p-4 text-xl font-semibold cursor-pointer rounded-md bg-black text-white">
-          Lesson - 6
+        <NavLink to={`/lessonpage/${6}`}>Lesson - 6</NavLink>
         </div>
         <div className="border p-4 text-xl font-semibold cursor-pointer rounded-md bg-black text-white">
-          Lesson - 7
+        <NavLink to={`/lessonpage/${7}`}>Lesson - 7</NavLink>
         </div>
         <div className="border p-4 text-xl font-semibold cursor-pointer rounded-md bg-black text-white">
-          Lesson - 8
+        <NavLink to={`/lessonpage/${8}`}>Lesson - 8</NavLink>
         </div>
         <div className="border p-4 text-xl font-semibold cursor-pointer rounded-md bg-black text-white">
-          Lesson - 9
+        <NavLink to={`/lessonpage/${9}`}>Lesson - 9</NavLink>
         </div>
 
         <div className="border p-4 text-xl font-semibold cursor-pointer rounded-md bg-black text-white">
-          Lesson - 10
+        <NavLink to={`/lessonpage/${10}`}>Lesson - 10</NavLink>
         </div>
 
         <div className="border p-4 text-xl font-semibold cursor-pointer rounded-md bg-black text-white" onClick={()=>toast.error("This lesson coming soon")}>
@@ -65,9 +70,10 @@ function StartLearning() {
 
         <hr />
       </div>
+      <hr></hr>
 
       <div className="mt-10 flex flex-col text-center justify-center items-center space-y-4">
-        <h1 className="text-4xl font-semibold text-center">
+        <h1 className="text-4xl font-semibold text-center text-white">
           {" "}
           Learning the alphabet
         </h1>
@@ -97,10 +103,10 @@ function StartLearning() {
           ></iframe>
         </div>
       </div>
-      <div className="text-center  mt-10">
+      <div className="text-center  mt-10 ">
 
         
-      <button onClick={()=> gottoTouto('/tutorials')} className="text-xl font-semibold px-6 py-2 border rounded-md bg-purple-500 ">View More</button>
+      <button onClick={()=> gottoTouto('/tutorials')} className="text-xl font-semibold px-6 py-2 border rounded-md bg-purple-500 mb-4">View More</button>
 
       
       </div>

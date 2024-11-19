@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 function Toutorails() {
   return (
-    <div>
+    <div className="bg-black text-white rounded-md">
       <h1 className="text-2xl font-semibold text-center mt-10 border p-2">
         Here you can get Toutorails{" "}
       </h1>
@@ -88,7 +88,7 @@ function Toutorails() {
       </section>
 
       <div className="flex justify-center mt-10">
-        <NavLink className="px-6 py-2 border rounded-md text-xl font-semibold bg-green-300"
+        <NavLink className="px-6 py-2 border rounded-md text-xl font-semibold bg-white text-black mb-10 hover:bg-green-400"
         to={'/startLearning'}
         >Learn Vocabularies</NavLink>
       </div>

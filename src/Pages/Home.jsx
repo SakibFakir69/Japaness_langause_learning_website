@@ -12,10 +12,13 @@ function Home() {
   return (
     <div>
       <Banner/>
+      {/* add 3 ai genrate photo */}
       <About/>
+      {/* add hand icon per ttitle */}
       <Success/>
       <Unique/>
       <Other/>
+      {/* discount offer */}
 
 
 

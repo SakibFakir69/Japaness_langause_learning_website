@@ -4,7 +4,7 @@ function Banner() {
   return (
     <div className="mt-10 px-4 rounded-md">
       
-      <div class="carousel w-full">
+      <div class="carousel w-full rounded-md">
         <div id="slide1" class="carousel-item relative w-full">
           <img
             src="banner.jpg"

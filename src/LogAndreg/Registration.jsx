@@ -10,7 +10,7 @@ import { toast, ToastContainer  } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
 function Registration() {
-  const { handelReg, handelGoogleReg, setuser , seterror,error } = useContext(MyContext);
+  const { handelReg, handelGoogleReg, setuser , seterror,error,setloading } = useContext(MyContext);
 
   const Provider = new GoogleAuthProvider();
 
@@ -60,13 +60,16 @@ function Registration() {
   const navtoHome = useNavigate();
 
   const hadnelGoogle = () => {
+
+    
     handelGoogleReg()
       .then((result) => {
 
         navtoHome("/");
         const users = result.user;
         setuser(users);
-        toast.success("Succesfully gogle Regsitation")
+        toast.success("Succesfully gogle Regsitation");
+        setloading(true)
 
 
       })
@@ -90,6 +93,7 @@ function Registration() {
 
     if(passworderror)
     {
+      setloading(false);
       seterror(passworderror);
       return ;
     }
@@ -116,6 +120,7 @@ function Registration() {
               alert("profile updated");
               setuser(users);
               navtoHome("/");
+              setloading(true);
               
        
 

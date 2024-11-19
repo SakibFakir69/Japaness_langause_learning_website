@@ -9,7 +9,7 @@ import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 function Login() {
 
-  const { HandelLogin,setuser} = useContext(MyContext);
+  const { HandelLogin,setuser,setlaoding} = useContext(MyContext);
 
 
   const navtoHome = useNavigate();
@@ -35,6 +35,8 @@ function Login() {
       {
         toast.success("Log in Succesfully")
         setuser(users)
+        setlaoding(true)
+       
         
         navtoHome('/')
       }
@@ -59,6 +61,8 @@ function Login() {
         toast.success("Log in Succesfully")
         setuser(users)
         navtoHome('/')
+        setlaoding(true);
+    
       }
         
     })
