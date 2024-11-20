@@ -1,10 +1,14 @@
 import React from "react";
 
 function Banner() {
+  // use banner
+
+
   return (
-    <div className="mt-10 px-4 rounded-md">
+    <div className="mt-10 px-4 rounded-md  2">
       
       <div class="carousel w-full rounded-md">
+
         <div id="slide1" class="carousel-item relative w-full">
           <img
             src="banner.jpg"

@@ -10,8 +10,12 @@ import Other from '../Homepages/Other'
 
 function Home() {
   return (
-    <div>
+    <div className='px-4 mx-auto'>
+
+    
       <Banner/>
+    
+
       {/* add 3 ai genrate photo */}
       <About/>
       {/* add hand icon per ttitle */}

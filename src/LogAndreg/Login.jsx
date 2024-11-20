@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link, useNavigate, } from "react-router-dom";
+import { Link, NavLink, useNavigate, } from "react-router-dom";
 import { MyContext } from "../Context/ContextApi";
 import { Container, fromJSON } from "postcss";
 import auth from "../Firebaseconfig/config";
@@ -109,10 +109,11 @@ function Login() {
               required
             />
             <label class="label">
-              <a href="#" class="label-text-alt link link-hover">
+              <NavLink to={'/forgetpass'} class="label-text-alt link link-hover">
                 Forgot password?
-              </a>
+              </NavLink>
             </label>
+
           </div>
           <div class="form-control mt-6">
 

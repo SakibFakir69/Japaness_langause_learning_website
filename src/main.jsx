@@ -17,6 +17,7 @@ import Aboutus from './Component/Aboutus.jsx'
 import PrivateRouter from './PrivateRoute/PrivateRouter.jsx'
 import Lessonpage from './Pages/Lessonpage.jsx'
 import UpdateProfile from './Pages/UpdateProfile.jsx'
+import Forget from './Pages/Forget.jsx'
 
 
 
@@ -83,9 +84,16 @@ const route =createBrowserRouter([
 
   },
   {
+    path : 'forgetpass',
+    element : <Forget/>
+  }
+  ,
+
+  {
     path : '*',
     element :<Errorpage/>
   },
+
 ])
 
 

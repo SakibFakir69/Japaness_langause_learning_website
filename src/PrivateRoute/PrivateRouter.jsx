@@ -8,17 +8,17 @@ function PrivateRouter({ children }) {
   /// private jai user theka jodi true hoye toi acces korta parab oi child
   // n a hola paraba na
 
-  if (!loading) {
+  // if (!loading) {
 
-    return (
-      <div className="flex justify-center items-center ">
-        <span class="loading loading-ring loading-xs"></span>
-        <span class="loading loading-ring loading-sm"></span>
-        <span class="loading loading-ring loading-md"></span>
-        <span class="loading loading-ring loading-lg"></span>
-      </div>
-    );
-  }
+  //   return (
+  //     <div className="flex justify-center items-center ">
+  //       <span class="loading loading-ring loading-xs"></span>
+  //       <span class="loading loading-ring loading-sm"></span>
+  //       <span class="loading loading-ring loading-md"></span>
+  //       <span class="loading loading-ring loading-lg"></span>
+  //     </div>
+  //   );
+  // }
 
   if (user) {
     return children;

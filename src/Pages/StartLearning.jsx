@@ -72,6 +72,7 @@ function StartLearning() {
       </div>
       <hr></hr>
 
+      {/*  learning the alphabet japaness */}
       <div className="mt-10 flex flex-col text-center justify-center items-center space-y-4">
         <h1 className="text-4xl font-semibold text-center text-white">
           {" "}
