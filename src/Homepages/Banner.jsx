@@ -25,7 +25,7 @@ function Banner() {
         </div>
         <div id="slide2" class="carousel-item relative w-full">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+            src="j.jpg"
             class="w-full"
           />
           <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -39,7 +39,7 @@ function Banner() {
         </div>
         <div id="slide3" class="carousel-item relative w-full">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+            src="t.jpg"
             class="w-full"
           />
           <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -53,7 +53,7 @@ function Banner() {
         </div>
         <div id="slide4" class="carousel-item relative w-full">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+            src="l.jpg"
             class="w-full"
           />
           <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
