@@ -36,7 +36,7 @@ function Navbar() {
 
 
   const links = <>
-  <li>   <NavLink to={'/'}>Home</NavLink></li>
+  <li className="">   <NavLink to={'/'}>Home</NavLink></li>
   <li>   <NavLink to={'/startLearning'}> Start Learning</NavLink></li>
 
    <li><NavLink to={'/tutorials'}>Toutorails</NavLink></li>
@@ -49,9 +49,9 @@ function Navbar() {
 
 
   return (
-    <div className="px-2 rounded ">
+    <div className="px-2 rounded  ">
 
-      <div class="navbar bg-base-100 border">
+      <div class="navbar border bg-lime-200 rounded">
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -85,9 +85,31 @@ function Navbar() {
 
           </ul>
         </div>
-        <div class="navbar-end">
-          <a class="btn">Button</a>
+        
+        <div class="navbar-end mt-4">
+          {/* <a class="btn">Button</a> */}
+
+          {user ? (
+            <div className="">
+              <button
+                onClick={handelSignOut}
+                className="px-8 py-1 border -mt-10 rounded-md btn"
+              >
+                Log out
+              </button>
+            </div>
+          ) : (
+            <div>
+              <NavLink to="auth/login" className={`btn bg-green-300`}>
+                Log in
+              </NavLink>
+            </div>
+          )}
+
+          
         </div>
+
+
       </div>
     </div>
   );
