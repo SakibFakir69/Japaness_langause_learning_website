@@ -3,6 +3,7 @@ import auth from "../Firebaseconfig/config";
 import { updateProfile } from "firebase/auth";
 import { Navigate, useNavigate } from "react-router-dom";
 import { MyContext } from "../Context/ContextApi";
+import { toast } from "react-toastify";
 function UpdateProfile() {
 
     const {user } = useContext(MyContext);
@@ -26,7 +27,7 @@ function UpdateProfile() {
     })
     .then((result)=>{
         navtoprofile("/myprofile");
-        alert("update done")
+        toast.success("update Done")
     })
     .catch((error)=>{
         console.log("updated failded")
@@ -71,7 +72,7 @@ function UpdateProfile() {
           />
         </div>
 
-        <button type="submit">update info</button>
+        <button type="submit" className="border px-6 p-2 mb-4">update info</button>
       </form>
     </div>
   );

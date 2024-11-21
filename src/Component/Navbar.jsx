@@ -20,6 +20,7 @@ function Navbar() {
    
     signOut(auth)
       .then((result) => {
+        setloading(false);
         
         toast.success("Log out succesfully");
         setuser(null);

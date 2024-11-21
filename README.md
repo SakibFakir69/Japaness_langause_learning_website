@@ -4,12 +4,12 @@ Purpose : A fun and interactive language learning application designed to help u
 
 
 
-live URL : 
+live URL : https://assiment-6afaa.firebaseapp.com
 
 key features : 
   1. Easy to use 
-  2. 
-  3.
+  2. Effective learn ui
+  3.User friendly
 
 Npm package : 
      1 .React counterUp

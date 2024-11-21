@@ -3,12 +3,14 @@ import Aos from 'aos'
 import 'aos/dist/aos.css';
 function About() {
   Aos.init();
+
   return (
 
-    <div className="mt-6 px-4 "  data-aos="flip-left">
+    <div className="mt-6 px-4 overflow-auto"  data-aos="flip-left">
+
       <h1 className="text-center text-2xl font-semibold">Our Mission</h1>
 
-      <div className="border-2 p-8 rounded-md shadow-lg">
+      <div className="border-2 p-8 rounded-md shadow-lg overflow-auto">
         <p className="text-center">
 
          <div className="border p-2 bg-[url(/cool3.png)] rounded-md" data-aos="fade-left">

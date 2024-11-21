@@ -14,9 +14,10 @@ function PrivateRouter({ children }) {
   // slider probelm 
   // then review ready to upload
 
-  console.log("from private route")
+  
 
-  if (loading) {
+  if (!loading) {
+    alert("f")
 
     return  <span class="loading loading-ring loading-xs"></span>
   }

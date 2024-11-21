@@ -10,7 +10,7 @@ import Other from '../Homepages/Other'
 
 function Home() {
   return (
-    <div className='px-4 mx-auto'>
+    <div className='px-4 '>
 
     
       <Banner/>

@@ -16,9 +16,7 @@ function ContextApi({children}) {
 
   const [ loading , setloading ] = useState(true);
   const [ user , setuser ] = useState(null);
-  const [name, setname] = useState('');
 
-  const [photoUrl, setphotoUrl] = useState('');
 
 
 
@@ -57,8 +55,14 @@ function ContextApi({children}) {
 
       const unscribe = onAuthStateChanged(auth , (currentUser=>{
 
-       setuser(currentUser);
-       setloading(false);
+       if(currentUser)
+       {
+        setuser(currentUser)
+
+  
+       }else{
+        setloading(false);
+       }
        
 
 
