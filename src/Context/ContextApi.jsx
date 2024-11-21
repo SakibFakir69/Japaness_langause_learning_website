@@ -13,6 +13,7 @@ export const MyContext =  createContext();
 function ContextApi({children}) {
 
   const [ error , seterror ] = useState(null);
+
   const [ loading , setloading ] = useState(true);
   const [ user , setuser ] = useState(null);
   const [name, setname] = useState('');
@@ -43,13 +44,6 @@ function ContextApi({children}) {
 
 
 
-    const authInfo ={
-      handelReg,seterror,setloading,setuser,
-      handelGoogleReg,user, HandelLogin,error,loading
-    
-
-
-    }
 
     
     
@@ -61,24 +55,30 @@ function ContextApi({children}) {
 
       const unscribe = onAuthStateChanged(auth , (currentUser=>{
 
-       if(currentUser)
-       {
-        setuser(currentUser)
-        // setname(currentUser.displayName)
-        // setphotoUrl(currentUser.photoURL)
-       }
+       setuser(currentUser);
+       setloading(false);
        
 
 
       }))
 
-      setloading(false);
+   
 
       return ()=>{
         unscribe();
       }
 
     },[])
+
+    console.log(loading,"from context")
+
+    const authInfo ={
+      handelReg,seterror,setloading,setuser,
+      handelGoogleReg,user, HandelLogin,error,loading
+    
+
+
+    }
 
 
   return (

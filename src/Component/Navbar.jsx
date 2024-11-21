@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function Navbar() {
-  const { user, setuser, setloading } = useContext(MyContext);
+  const { user, setuser, setloading ,loading} = useContext(MyContext);
 
   console.log("nav ", { user });
 
@@ -17,9 +17,10 @@ function Navbar() {
   };
 
   const handelSignOut = () => {
+    setloading(true);
     signOut(auth)
       .then((result) => {
-        setloading(true);
+        
         toast.success("Log out succesfully");
         setuser(null);
         // here i face problem on setuers
@@ -77,7 +78,7 @@ function Navbar() {
               {links}
             </ul>
           </div>
-          <a class="btn btn-ghost text-xl">daisyUI</a>
+          <i onClick={()=> home('/')}  class="ri-presentation-line text-2xl md:text-4xl cursor-pointer px-2"></i>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
@@ -93,7 +94,7 @@ function Navbar() {
             <div className="">
               <button
                 onClick={handelSignOut}
-                className="px-8 py-1 border -mt-10 rounded-md btn"
+                className="md:px-8 px-4 py-1 border -mt-10 rounded-md btn"
               >
                 Log out
               </button>

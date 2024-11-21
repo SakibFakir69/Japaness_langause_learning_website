@@ -8,10 +8,11 @@ function Toutorails() {
         Here you can get Toutorails{" "}
       </h1>
 
-      <section className="grid md:grid-cols-3 gap-6  justify-center grid-cols-2 items-center px-4 md:px-8 text-center mt-10">
+      <section className="grid lg:grid-cols-3 gap-6  justify-center md:grid-cols-1 grid-cols-1 items-center px-4 md:px-8 text-center mt-10">
 
-        <div className="w-full aspect-w-16 aspect-h-9 ">
-        <iframe className="w-full h-full" src="https://www.youtube.com/embed/7DCCN3pCGtk?si=aEjUKURi-poY4J_1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div className=" w-full ">
+        <iframe className="w-full " 
+        src="https://www.youtube.com/embed/7DCCN3pCGtk?si=aEjUKURi-poY4J_1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
         <div className="w-full aspect-w-16 aspect-h-9">

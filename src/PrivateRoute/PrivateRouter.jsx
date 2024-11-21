@@ -8,17 +8,26 @@ function PrivateRouter({ children }) {
   /// private jai user theka jodi true hoye toi acces korta parab oi child
   // n a hola paraba na
 
-  // if (!loading) {
+
+  // solve loading 
+  // solve bar 
+  // slider probelm 
+  // then review ready to upload
+
+  console.log("from private route")
+
+  // if (loading) {
 
   //   return (
   //     <div className="flex justify-center items-center ">
+
   //       <span class="loading loading-ring loading-xs"></span>
-  //       <span class="loading loading-ring loading-sm"></span>
-  //       <span class="loading loading-ring loading-md"></span>
-  //       <span class="loading loading-ring loading-lg"></span>
+
   //     </div>
   //   );
   // }
+
+  
 
   if (user) {
     return children;

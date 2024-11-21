@@ -120,7 +120,7 @@ function Registration() {
               alert("profile updated");
               setuser(users);
               navtoHome("/");
-              setloading(true);
+  
               
        
 

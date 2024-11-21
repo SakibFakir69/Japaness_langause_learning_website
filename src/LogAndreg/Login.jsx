@@ -9,7 +9,7 @@ import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 function Login() {
 
-  const { HandelLogin,setuser,setlaoding} = useContext(MyContext);
+  const { HandelLogin,setuser,setloading,loading} = useContext(MyContext);
 
 
   const navtoHome = useNavigate();
@@ -20,6 +20,7 @@ function Login() {
   const handelSignIN = (event)=>{
     // log in 
     event.preventDefault();
+    
 
     const form  = event.target;
 
@@ -48,8 +49,10 @@ function Login() {
 
 
   }
+  console.log(loading + 'from login')
 
   const hadnelGoogleLogin = ()=>{
+   
     // handel login 
     HandelLogin()
     .then((result)=>{
@@ -61,7 +64,7 @@ function Login() {
         toast.success("Log in Succesfully")
         setuser(users)
         navtoHome('/')
-        setlaoding(true);
+        setloading(true);
     
       }
         
