@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Banner() {
   // use banner
@@ -7,22 +8,28 @@ function Banner() {
     <div className="mt-10 px-4 rounded-md  2">
       <div>
         <div
-          className="hero min-h-screen"
+          className="hero min-h-screen rounded"
           style={{
             backgroundImage:
-              "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
+              "url(/b.jpg)",
           }}
         >
           <div className="hero-overlay bg-opacity-60"></div>
           <div className="hero-content text-neutral-content text-center">
             <div className="max-w-md">
-              <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+              <h1 className="mb-5 text-5xl font-bold">Learn Japaness </h1>
               <p className="mb-5">
-                Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                assumenda excepturi exercitationem quasi. In deleniti eaque aut
-                repudiandae et a id nisi.
+
+             1. Expand Your Vocabulary – Learn new words daily.
+             <br></br>
+
+             2. Interactive Quizzes – Test and retain knowledge effortlessly.
+             <br></br>
+             
+             3. Custom Word Lists – Tailor learning to your goals.
+
               </p>
-              <button className="btn btn-primary">Get Started</button>
+              
             </div>
           </div>
         </div>
