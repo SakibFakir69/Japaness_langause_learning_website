@@ -4,7 +4,7 @@ Purpose : A fun and interactive language learning application designed to help u
 
 
 
-live URL : https://assiment-6afaa.firebaseapp.com
+live URL :https://magnificent-chebakia-90a228.netlify.app/
 
 key features : 
   1. Easy to use 

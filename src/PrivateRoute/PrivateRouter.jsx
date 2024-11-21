@@ -16,8 +16,7 @@ function PrivateRouter({ children }) {
 
   
 
-  if (!loading) {
-    alert("f")
+  if (loading) {
 
     return  <span class="loading loading-ring loading-xs"></span>
   }
