@@ -49,14 +49,14 @@ function Login() {
 
 
   }
-  console.log(loading + 'from login')
+
 
   const hadnelGoogleLogin = ()=>{
    
     // handel login 
     HandelLogin()
     .then((result)=>{
-      console.log(result.user,"from")
+      
 
       const users = result.user;
       if(users)

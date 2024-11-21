@@ -116,8 +116,8 @@ function Registration() {
         if (users) {
           updateProfile(users, { displayName: name, photoURL: PhotoUrl })
             .then(() => {
-              console.log("profile updatedd from reg");
-              alert("profile updated");
+
+     
               setuser(users);
               navtoHome("/");
   
@@ -131,11 +131,10 @@ function Registration() {
         }
       })
       .catch((error) => {
-        console.log(error.message, "from regsataiong");
+
         toast.error("Regisataion failed")
       });
 
-    console.log("from rgsatataion");
   };
 
   return (
