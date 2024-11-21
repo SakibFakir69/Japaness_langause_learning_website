@@ -75,7 +75,7 @@ const route =createBrowserRouter([
   },
   {
     path : 'aboutus',
-    element : <PrivateRouter> <Aboutus/> </PrivateRouter>
+    element :  <Aboutus/>
   },
   {
     path : '/lessonpage/:lesson_no',

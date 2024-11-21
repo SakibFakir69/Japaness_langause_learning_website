@@ -16,16 +16,10 @@ function PrivateRouter({ children }) {
 
   console.log("from private route")
 
-  // if (loading) {
+  if (loading) {
 
-  //   return (
-  //     <div className="flex justify-center items-center ">
-
-  //       <span class="loading loading-ring loading-xs"></span>
-
-  //     </div>
-  //   );
-  // }
+    return  <span class="loading loading-ring loading-xs"></span>
+  }
 
   
 

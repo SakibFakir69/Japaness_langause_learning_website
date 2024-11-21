@@ -3,66 +3,27 @@ import React from "react";
 function Banner() {
   // use banner
 
-
   return (
     <div className="mt-10 px-4 rounded-md  2">
-      
-      <div class="carousel w-full rounded-md">
-
-        <div id="slide1" class="carousel-item relative w-full">
-          <img
-            src="banner.jpg"
-            class="w-full"
-          />
-          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-            <a href="#slide4" class="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide2" class="btn btn-circle">
-              ❯
-            </a>
-          </div>
-        </div>
-        <div id="slide2" class="carousel-item relative w-full">
-          <img
-            src="j.jpg"
-            class="w-full"
-          />
-          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-            <a href="#slide1" class="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide3" class="btn btn-circle">
-              ❯
-            </a>
-          </div>
-        </div>
-        <div id="slide3" class="carousel-item relative w-full">
-          <img
-            src="t.jpg"
-            class="w-full"
-          />
-          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-            <a href="#slide2" class="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide4" class="btn btn-circle">
-              ❯
-            </a>
-          </div>
-        </div>
-        <div id="slide4" class="carousel-item relative w-full">
-          <img
-            src="l.jpg"
-            class="w-full"
-          />
-          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-            <a href="#slide3" class="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide1" class="btn btn-circle">
-              ❯
-            </a>
+      <div>
+        <div
+          className="hero min-h-screen"
+          style={{
+            backgroundImage:
+              "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
+          }}
+        >
+          <div className="hero-overlay bg-opacity-60"></div>
+          <div className="hero-content text-neutral-content text-center">
+            <div className="max-w-md">
+              <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+              <p className="mb-5">
+                Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                assumenda excepturi exercitationem quasi. In deleniti eaque aut
+                repudiandae et a id nisi.
+              </p>
+              <button className="btn btn-primary">Get Started</button>
+            </div>
           </div>
         </div>
       </div>

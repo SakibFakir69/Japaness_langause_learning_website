@@ -17,7 +17,7 @@ function Navbar() {
   };
 
   const handelSignOut = () => {
-    setloading(true);
+   
     signOut(auth)
       .then((result) => {
         
@@ -29,7 +29,7 @@ function Navbar() {
         toast.error("we found error " + error.message);
       });
 
-    console.log("log out from navbar navbar");
+
   };
 
   const homeloc = useLocation().pathname;

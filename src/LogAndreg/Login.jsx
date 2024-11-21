@@ -26,7 +26,7 @@ function Login() {
 
     const password = form.password.value;
     const email = form.email.value;
-    console.log(email, password);
+
 
     signInWithEmailAndPassword(auth,email,password)
     .then((result)=>{
@@ -64,7 +64,7 @@ function Login() {
         toast.success("Log in Succesfully")
         setuser(users)
         navtoHome('/')
-        setloading(true);
+
     
       }
         

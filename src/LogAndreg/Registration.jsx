@@ -47,7 +47,7 @@ function Registration() {
 
   const showpass = ()=>{
     setpaswordvisible(prev =>!prev);
-    console.log("pasword")
+
   }
 
 
@@ -69,12 +69,12 @@ function Registration() {
         const users = result.user;
         setuser(users);
         toast.success("Succesfully gogle Regsitation");
-        setloading(true)
+
 
 
       })
       .catch((error) => {
-        console.log("google reg faild to form");
+
         toast.error("Succesfully gogle Regsitation")
       });
   };
@@ -93,7 +93,7 @@ function Registration() {
 
     if(passworderror)
     {
-      setloading(false);
+     
       seterror(passworderror);
       return ;
     }
@@ -126,7 +126,6 @@ function Registration() {
 
             })
             .catch((error) => {
-              console.log("we fround error on reg");
               toast.error("Succesfully Profileupdated failed")
             });
         }
