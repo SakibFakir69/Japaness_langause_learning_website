@@ -61,12 +61,15 @@ function Registration() {
 
   const hadnelGoogle = () => {
 
+    setloading(true)
+
     
     handelGoogleReg()
       .then((result) => {
 
         navtoHome("/");
         const users = result.user;
+        setloading(false)
         setuser(users);
         toast.success("Succesfully gogle Regsitation");
 
@@ -99,6 +102,9 @@ function Registration() {
     }
 
 
+    setloading(true);
+
+
     
     
 
@@ -120,6 +126,7 @@ function Registration() {
      
               setuser(users);
               navtoHome("/");
+              setloading(false)
   
               
        

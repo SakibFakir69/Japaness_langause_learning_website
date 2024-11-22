@@ -27,8 +27,7 @@ function PrivateRouter({ children }) {
     return children;
   }
 
-  // jodi user true hoye tokon children a jaba
-  // na pass korea auth/login jaba
+  
 
   return <Navigate to="/auth/login"></Navigate>;
 }

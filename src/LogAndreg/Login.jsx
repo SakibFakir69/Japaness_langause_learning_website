@@ -26,7 +26,7 @@ function Login() {
 
     const password = form.password.value;
     const email = form.email.value;
-
+    setloading(true);
 
     signInWithEmailAndPassword(auth,email,password)
     .then((result)=>{
@@ -35,7 +35,8 @@ function Login() {
       if(users)
       {
         toast.success("Log in Succesfully")
-        setuser(users)
+        setuser(users);
+        setloading(false);
   
        
         
@@ -52,6 +53,9 @@ function Login() {
 
 
   const hadnelGoogleLogin = ()=>{
+
+    setloading(true)
+
    
     // handel login 
     HandelLogin()
@@ -64,6 +68,7 @@ function Login() {
         toast.success("Log in Succesfully")
         setuser(users)
         navtoHome('/')
+        setloading(false);
 
     
       }

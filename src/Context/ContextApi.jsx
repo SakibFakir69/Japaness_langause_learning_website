@@ -14,7 +14,7 @@ function ContextApi({children}) {
 
   const [ error , seterror ] = useState(null);
 
-  const [ loading , setloading ] = useState(true);
+  const [ loading , setloading ] = useState(false);
   const [ user , setuser ] = useState(null);
 
 
@@ -53,20 +53,16 @@ function ContextApi({children}) {
 
     useEffect(()=>{
 
-      const unscribe = onAuthStateChanged(auth , (currentUser=>{
+      const unscribe = onAuthStateChanged(auth , (currentUser)=>{
 
-       if(currentUser)
-       {
-        setuser(currentUser)
-
-  
-       }else{
-        setloading(false);
-       }
+       setuser(currentUser)
+       setloading(false)
+     
        
 
 
-      }))
+      })
+
 
      
 
