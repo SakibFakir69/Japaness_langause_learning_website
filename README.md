@@ -3,8 +3,7 @@
 ## 📌 Overview  
 PH Assignment 09 is a **React-based web project** that integrates **Firebase authentication, animations, and interactive UI components**. It provides a smooth user experience with real-time updates, notifications, and dynamic content rendering.  
 
-## 📸 Screenshot  
-![Project Screenshot](link-to-your-screenshot) *(Replace with an actual image URL)*  
+
 
 ## 🚀 Technologies Used  
 - React  
